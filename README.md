@@ -1,4 +1,6 @@
-# vue-sandbox
+# Vue + MobX + Inversify Demo
+
+A simple Todo app demonstrating usage of Vue (Vuetify) with MobX for state management and Inversify for handling IoC.
 
 ## Project setup
 ```
@@ -14,16 +16,3 @@ yarn run serve
 ```
 yarn run build
 ```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
