@@ -2,7 +2,7 @@
   <v-card>
     <v-card-text>
       <v-layout row align-center>
-        <v-flex xs1>
+        <v-flex xs1 class="text-xs-center">
           <v-checkbox :input-value="value.done" @change="onDoneChanged" hide-details class="ma-0"/>
         </v-flex>
         <v-flex xs10>
@@ -22,7 +22,7 @@
             </template>
           </h3>
         </v-flex>
-        <v-flex xs1>
+        <v-flex xs1 class="text-xs-right">
           <v-btn flat icon @click="$todoRepository.remove(value)">
             <v-icon>mdi-delete</v-icon>
           </v-btn>
