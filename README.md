@@ -10,6 +10,10 @@ Sample Todo app using the following technologies:
 * IndexedDB for storage
 * Web Worker for handling storage
 
+## Demo
+
+https://www.dnasir.com/vue-mobx-inversify-demo
+
 ## Project setup
 ```
 yarn install
