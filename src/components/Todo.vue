@@ -23,7 +23,7 @@
           </h3>
         </v-flex>
         <v-flex xs1 class="text-xs-right">
-          <v-btn flat icon @click="$todoRepository.remove(value)">
+          <v-btn flat icon @click="$emit('on-remove', value)">
             <v-icon>mdi-delete</v-icon>
           </v-btn>
         </v-flex>

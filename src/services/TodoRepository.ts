@@ -4,7 +4,7 @@ import { Todo } from '@/models/Todo';
 import { observable } from 'mobx';
 import { ITodoRepository } from './ITodoRepository';
 import { ITodoApi, ITodoApiId } from '@/api/ITodoApi';
-import TryCatch from '@/helpers/TryCatchHelper';
+import TryCatch from '@/helpers/TryCatchDecorator';
 
 @injectable()
 export default class TodoRepository implements ITodoRepository {

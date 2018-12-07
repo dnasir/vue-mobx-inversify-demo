@@ -1,5 +1,5 @@
 /**
- * Try/catch helper
+ * Try/catch decorator
  * @param target Target class
  * @param key Method name
  * @param descriptor 
@@ -9,7 +9,6 @@ function TryCatch(target, key, descriptor) {
 
   descriptor.value = async function (...args) {
     try {
-      console.log(`Trying ${target.constructor.name}.${key} with arguments`, args);
       return await originalMethod.apply(this, args);
     } catch (error) {
       console.error(error.message);

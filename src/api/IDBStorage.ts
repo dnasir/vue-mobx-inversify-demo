@@ -14,7 +14,7 @@ export default class IDBStorage implements ITodoApi {
 
   constructor() {
     this.dbPromise = idb.open(this.dbName, 1, upgradeDB => {
-      upgradeDB.createObjectStore(this.storeName, { keyPath: 'id' });
+      upgradeDB.createObjectStore(this.storeName, { keyPath: 'id', autoIncrement: true });
     });
     this.objectStore = this.dbPromise.then(db => db.transaction(this.storeName, 'readwrite').objectStore(this.storeName))
   }
