@@ -15,8 +15,8 @@ export default class TodoRepository implements ITodoRepository {
   todos: Todo[] = [];
 
   @postConstruct()
-  onReady() {
-    this.list();
+  async onReady() {
+    await this.list();
   }
 
   @TryCatch

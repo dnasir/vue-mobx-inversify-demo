@@ -24,7 +24,7 @@
         </v-flex>
         <v-flex xs1 class="text-xs-right">
           <v-btn flat icon @click="$emit('on-remove', value)">
-            <v-icon>mdi-delete</v-icon>
+            <v-icon>delete</v-icon>
           </v-btn>
         </v-flex>
       </v-layout>
