@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import Vue from 'vue';
 import '@/plugins/vuetify';
 import '@/components';

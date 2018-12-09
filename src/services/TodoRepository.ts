@@ -1,4 +1,3 @@
-import 'reflect-metadata';
 import { injectable, inject, postConstruct } from 'inversify';
 import { Todo } from '@/models/Todo';
 import { observable } from 'mobx';

@@ -1,4 +1,3 @@
-import 'reflect-metadata';
 import { injectable } from 'inversify';
 import idb, { DB, ObjectStore } from 'idb';
 import { Todo } from '@/models/Todo';
